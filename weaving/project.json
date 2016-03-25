@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0-*",
+  "description": "WeavingSandbox Console Application",
+  "authors": [ "" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
+
+  "tooling": {
+    "defaultNamespace": "WeavingSandbox"
+  },
+
+  "dependencies": {
+      "Tracer.Log4Net.Fody": "1.2.2",
+      "NameOf.Fody": "0.8.4"
+  },
+
+  "commands": {
+    "run": "WeavingSandbox"
+  },
+
+  "frameworks": {
+    "dnx451": { },
+    "dnxcore50": {
+      "dependencies": {
+        "Microsoft.CSharp": "4.0.1-beta-23516",
+        "System.Collections": "4.0.11-beta-23516",
+        "System.Console": "4.0.0-beta-23516",
+        "System.Linq": "4.0.1-beta-23516",
+        "System.Threading": "4.0.11-beta-23516"
+      }
+    }
+  }
+}
